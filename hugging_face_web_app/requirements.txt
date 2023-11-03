@@ -1,0 +1,6 @@
+torch
+torchvision
+gradio
+openai-clip
+open_clip_torch
+transformers
