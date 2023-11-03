@@ -1,0 +1,138 @@
+/* App.css */
+/* Style the entire app container */
+html, body {
+  height: 100%;
+}
+
+body {
+  background-image: url('https://stptrans.com/wp-content/uploads/2022/01/Ecommerce-Nordics.png');
+  /* background-image: url('https://www.bizztech.com.my/wp-content/uploads/2022/09/ecommerce-banner.jpg'); */
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0; /* Remove default margin to ensure the image covers the entire viewport */
+  padding: 0; /* Remove default padding */
+  font-family: Georgia, serif;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  height: 100%; /* Ensure the .App covers the entire viewport height */
+}
+
+
+/* Style the title */
+h1 {
+  font-size: 1.5rem;
+  color: #1B1212;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+/* Style the paragraph */
+p {
+  font-family: "Cursive", "Lucida Handwriting"; /* Set the font for the paragraph */
+  font-size: 1rem; /* Adjust the font size as needed */
+}
+/* Style the image upload component container */
+.image-upload-container {
+  margin-top: 5px;
+  margin-bottom: 5px; /* Adding margin at the bottom of the image upload container */
+}
+
+/* Style the file input */
+.image-upload-container input[type="file"] {
+  display: none; /* Hide the default file input */
+}
+
+/* Style the custom file input button */
+.custom-file-input {
+  background-color: #191970;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.custom-file-input:hover {
+  background-color: #0056b3;
+}
+
+/* Style the product display container */
+.product-display {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Spacing between image frames */
+  flex-direction: column;
+  align-items: center;
+}
+
+.middle-frame {
+  /* margin: 20px 0; */
+  text-align: center;
+  width: 300px; /* Set the width for each image frame */
+  height: 300px; /* Set the height for each image frame */
+  overflow: hidden; /* Hide overflow if the image is larger */
+  border: 1px solid #ddd; /* Border for the frame */
+}
+.recognized-images {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 100%;
+}
+
+.image-frame {
+  width: 300px; /* Set the width for each image frame */
+  height: 300px; /* Set the height for each image frame */
+  overflow: hidden; /* Hide overflow if the image is larger */
+  border: 1px solid #ddd; /* Border for the frame */
+  /* flex: 0 0 calc(33.33% - 20px); /* Set the width of each image */
+  /* max-width: calc(33.33% - 20px);  */
+}
+
+/* Style the recognized product image */
+.product-image {
+  /* max-width: 100%; */
+  width: 100%; /* Ensure the image fills its frame */
+  height: 100%; /* Ensure the image fills its frame */
+  object-fit: cover; /* Maintain aspect ratio and cover the frame */
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  /* margin-right: 20px; */
+  position: absolute; /* Position the button absolutely */
+  top: 40px; /* Top spacing */
+  right: 80px; /* Right spacing */
+}
+
+.about-button {
+  background-color: #6595c5;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.about-button:hover {
+  background-color: hsl(211, 100%, 78%);
+}
+.about-section p {
+  margin-top: 20px;
+  padding: 10px;
+  /* border: 1px solid #ccc; */
+  font-family: "Times New Roman", serif;
+}
